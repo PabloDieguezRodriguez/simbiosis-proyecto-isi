@@ -74,6 +74,13 @@ Los objetivos de esta tabla son resúmenes. Las descripciones detalladas quedan 
 | UC-33 | Eliminar cuenta de usuario | Eliminar una cuenta de usuario y conservar el contenido publicado cuando corresponda a un cuidador. | Principal: Coordinador. |
 | UC-34 | Consultar listado de cuentas de usuario | Consultar las cuentas y su información básica: nombre, correo, rol y estado. | Principal: Coordinador. |
 | UC-35 | Registrar acción en el historial de auditoría | Registrar la fecha, la hora y la acción realizada al aprobar, suspender o eliminar una cuenta. | Sin participación directa de un actor. Comportamiento incluido en UC-31, UC-32 y UC-33. |
+| UC-36 | Consultar historial | Consultar el historial de la cuenta propia | Principal: Usuario Registrado |
+| UC-37 | Exportar datos | Exportar datos de la cuenta propia en PDF y CSV | Principal: Usuario Registrado |
+| UC-38 | Usar busqueda avanzada | Usa busqueda avanzada | Principal: Usuario Registrado |
+| UC-39 | Enviar invitación a nutricionista | Enviar invitación a nutricionista | Principal: Sistema de Correo Electronico |
+| UC-40 | Publicar receta pre-validada | Publicar receta pre-validada | Principal: Nutricionista |
+| UC-41 | Consultar datos de salud | Consultar datos de salud | Principal: Nutricionista |
+
 
 UC-03 se representa como una subfunción de apoyo. Tener una sesión válida es una condición previa de las funciones protegidas. Esto no implica ejecutar UC-03 cada vez que se realiza una de ellas.
 

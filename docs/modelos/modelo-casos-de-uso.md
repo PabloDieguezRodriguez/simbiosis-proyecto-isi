@@ -223,47 +223,48 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 ### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:** UC-05 - Actualizar Perfil
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** Permitir que un usuario pueda actualizar su perfil, modificando campos como: nombre completo, teléfono, la dirección postal y las preferencias dietéticas.
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** Usuario que quiere actualizar su pérfil a medio de modificar los datos almacenados en el sistema.
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** El usuario debe tener un perfil y debe disponer de un dispositivo con el que pueda interaccionar con el sistema.
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** El usuario solicita actualizar el perfil actual.
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** El usuario solicita actualizar el perfil actual, el sistema presenta una interfaz que contiene campos editables de las propiedades del perfil, el usuario interacciona con dichos campos editables para modificar sus valores a los valores deseados por el usuario, el sistema permite que el usuario solicite guardar, el usuario solicita guardar.
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** Cuando el usuario solicite guardar, si hay errores de validación, el sistema muestra los errores de validación correspondientes a los valores introducidos por el usuario, el usuario corrige los errores de validación mencionados anteriormente y vuelve a solicitar guardar.
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+**Postcondiciones:** Si el proceso se ejecuta con éxito, el sistema guarda conjuntamente los datos y confirma que el perfil se ha actualizado; en caso contrario, si el usuario cancela el proceso, se descartan los cambios de esa edición y el perfil conserva los valores anteriores y si el sistema no puede guardar, informa del problema y no confirma la actualización, sin embargo, conserva los datos introducidos para que el usuario pueda reintentar el guardado.
 
 **Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
 
-**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+**Preguntas abiertas:** ¿Cómo comunica el sistema la confirmación de la actualización del perfil?
 
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:** UC-21 - Bustar Recetas
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** Buscar una receta entre las presentes en el sistema.
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** Usuario
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** El usuario tiene que tener una cuenta activa y debe de tener una sesión abierta en esa cuenta.
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** El usuario solicita buscar una receta.
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** El usuario solicita buscar una receta, el sistema ofrece una serie de filtros para la busqueda, el usuario introduce valores en los filtros y solicita ejecutar la búsqueda, el sistema ejecuta la búsqueda.
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** Si el usuario no introduce ningún valor en los filtros, el sistema solicita un criterio y conserva la búsqueda sin ejecutar.
+Si el usuario selecciona el mismo ingrediente para incluirlo y excluirlo,  el sistema, señala el conflicto.
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+**Postcondiciones:** El sistema muestra los resultados que no sean recetas pendientes al usuario, ordenados por fecha de publicación con las más recientes siendo las primeras.
 
 **Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
 
-**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+**Preguntas abiertas:** ¿Cómo comunica el sistema el problema que puede ocurrir al buscar?
 
 ## 7 Continuidad entre iteraciones
 

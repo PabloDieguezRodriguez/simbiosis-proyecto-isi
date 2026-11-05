@@ -283,3 +283,5 @@ El modelo acumulado contiene dos vistas, siete actores y veinticinco casos de us
 Git conserva las revisiones registradas del modelo y sus imágenes. La evaluación de cada iteración identificará el commit de su estado revisado, conforme a la [guía de modelos](README.md). Cerrar una iteración no declara automáticamente una línea base.
 
 Se añadió el contenido de los apartados 6.1 y 6.2, con la excepción de el subapartado "Reglas y NFR pertinentes". Para eso, no se usó ningún tipo de IA.
+
+![Diagrama de actividad de UC-21 · Buscar recetas](imagenes/actividad-buscar-recetas-uc21.png)
